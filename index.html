@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+  <h1>Chess</h1>
+
+  <div class="board-container">
+
+    <!-- Top file labels -->
+    <div class="files">
+      <span class="coord">A</span>
+      <span class="coord">B</span>
+      <span class="coord">C</span>
+      <span class="coord">D</span>
+      <span class="coord">E</span>
+      <span class="coord">F</span>
+      <span class="coord">G</span>
+      <span class="coord">H</span>
+    </div>
+
+    <!-- Left rank labels -->
+    <div class="ranks left">
+      <span class="coord">8</span>
+      <span class="coord">7</span>
+      <span class="coord">6</span>
+      <span class="coord">5</span>
+      <span class="coord">4</span>
+      <span class="coord">3</span>
+      <span class="coord">2</span>
+      <span class="coord">1</span>
+    </div>
+
+    <!-- Right rank labels -->
+    <div class="ranks right">
+      <span class="coord">8</span>
+      <span class="coord">7</span>
+      <span class="coord">6</span>
+      <span class="coord">5</span>
+      <span class="coord">4</span>
+      <span class="coord">3</span>
+      <span class="coord">2</span>
+      <span class="coord">1</span>
+    </div>
+
+    <!-- Chess Board -->
+    <div class="board">
+
+      <!-- ROW 1 — Rank 8 (Black back rank) -->
+      <div class="sq r1c1"><span class="piece bp">♜</span></div>
+      <div class="sq r1c2"><span class="piece bp">♞</span></div>
+      <div class="sq r1c3"><span class="piece bp">♝</span></div>
+      <div class="sq r1c4"><span class="piece bp">♛</span></div>
+      <div class="sq r1c5"><span class="piece bp">♚</span></div>
+      <div class="sq r1c6"><span class="piece bp">♝</span></div>
+      <div class="sq r1c7"><span class="piece bp">♞</span></div>
+      <div class="sq r1c8"><span class="piece bp">♜</span></div>
+
+      <!-- ROW 2 — Rank 7 -->
+      <div class="sq r2c1"><span class="piece bp">♟</span></div>
+      <div class="sq r2c2"><span class="piece bp">♟</span></div>
+      <div class="sq r2c3"><span class="piece bp">♟</span></div>
+      <div class="sq r2c4"></div>
+      <div class="sq r2c5"><span class="piece bp">♟</span></div>
+      <div class="sq r2c6"><span class="piece bp">♟</span></div>
+      <div class="sq r2c7"><span class="piece bp">♟</span></div>
+      <div class="sq r2c8"><span class="piece bp">♟</span></div>
+
+      <!-- ROW 3 — Rank 6 (empty) -->
+      <div class="sq r3c1"></div>
+      <div class="sq r3c2"></div>
+      <div class="sq r3c3"></div>
+      <div class="sq r3c4"></div>
+      <div class="sq r3c5"></div>
+      <div class="sq r3c6"></div>
+      <div class="sq r3c7"></div>
+      <div class="sq r3c8"></div>
+
+      <!-- ROW 4 — Rank 5 (d5 & e5 highlighted; g5 white pawn) -->
+      <div class="sq r4c1"></div>
+      <div class="sq r4c2"></div>
+      <div class="sq r4c3"></div>
+      <div class="sq r4c4"><span class="piece bp">♟</span></div>
+      <div class="sq r4c5"><span class="piece bp">♟</span></div>
+      <div class="sq r4c6"></div>
+      <div class="sq r4c7"><span class="piece wp">♙</span></div>
+      <div class="sq r4c8"></div>
+
+      <!-- ROW 5 — Rank 4 (empty) -->
+      <div class="sq r5c1"></div>
+      <div class="sq r5c2"></div>
+      <div class="sq r5c3"></div>
+      <div class="sq r5c4"></div>
+      <div class="sq r5c5"></div>
+      <div class="sq r5c6"></div>
+      <div class="sq r5c7"></div>
+      <div class="sq r5c8"></div>
+
+      <!-- ROW 6 — Rank 3 -->
+      <div class="sq r6c1"><span class="piece wp">♘</span></div>
+      <div class="sq r6c2"></div>
+      <div class="sq r6c3"><span class="piece wp">♙</span></div>
+      <div class="sq r6c4"></div>
+      <div class="sq r6c5"><span class="piece wp">♙</span></div>
+      <div class="sq r6c6"><span class="piece wp">♙</span></div>
+      <div class="sq r6c7"></div>
+      <div class="sq r6c8"><span class="piece wp">♘</span></div>
+
+      <!-- ROW 7 — Rank 2 -->
+      <div class="sq r7c1"><span class="piece wp">♙</span></div>
+      <div class="sq r7c2"><span class="piece wp">♙</span></div>
+      <div class="sq r7c3"><span class="piece wp">♙</span></div>
+      <div class="sq r7c4"><span class="piece wp">♙</span></div>
+      <div class="sq r7c5"></div>
+      <div class="sq r7c6"></div>
+      <div class="sq r7c7"></div>
+      <div class="sq r7c8"><span class="piece wp">♙</span></div>
+
+      <!-- ROW 8 — Rank 1 (White back rank) -->
+      <div class="sq r8c1"><span class="piece wp">♖</span></div>
+      <div class="sq r8c2"></div>
+      <div class="sq r8c3"><span class="piece wp">♗</span></div>
+      <div class="sq r8c4"><span class="piece wp">♕</span></div>
+      <div class="sq r8c5"><span class="piece wp">♔</span></div>
+      <div class="sq r8c6"><span class="piece wp">♗</span></div>
+      <div class="sq r8c7"></div>
+      <div class="sq r8c8"><span class="piece wp">♖</span></div>
+
+    </div>
+
+    <!-- Bottom file labels -->
+    <div class="files">
+      <span class="coord">A</span>
+      <span class="coord">B</span>
+      <span class="coord">C</span>
+      <span class="coord">D</span>
+      <span class="coord">E</span>
+      <span class="coord">F</span>
+      <span class="coord">G</span>
+      <span class="coord">H</span>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
